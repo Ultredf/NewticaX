@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📰 NewticaX
 
-## Getting Started
+NewticaX adalah aplikasi berita modern dan elegan dengan real-time news dari NewsAPI, dark mode premium, dan fitur bookmark. Dibangun dengan Next.js + MongoDB + Prisma.
 
-First, run the development server:
+## ✨ Fitur Utama
+
+- Real-time berita dari berbagai kategori
+- Pencarian berita
+- Simpan berita favorit
+- Autentikasi user (login/register)
+- Desain dark mode dengan warna eksklusif
+
+## 🛠️ Teknologi
+
+- **Next.js 14** (Frontend & API Routes)
+- **Shadcn/UI + Tailwind CSS** (UI)
+- **MongoDB** + **Prisma ORM** (Database)
+- **NewsAPI** (Sumber berita)
+- **Vercel** (Deployment)
+
+## 🎨 Tema Warna
+
+- Background: `#121212`
+- Aksen Merah: `#D90429`
+- Aksen Emas: `#FFD700`
+- Teks: `#EAEAEA`
+
+## 🚀 Cara Jalankan
 
 ```bash
+git clone https://github.com/username/newticax.git
+cd newticax
+npm install
+npx prisma generate
+npx prisma db push
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tambahkan `.env`:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+DATABASE_URL="mongodb+srv://..."
+NEWS_API_KEY="your_api_key"
+NEXTAUTH_SECRET="your_secret"
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Struktur Folder
 
-## Learn More
+```
+app/
+ ├─ api/
+ ├─ news/
+ └─ page.tsx
+lib/
+prisma/
+components/
+public/
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🧪 Todo (Fitur Mendatang)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Komentar berita
+- Notifikasi berita baru
+- PWA support
+- Light mode toggle
+- Rangkuman berita pakai AI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 Lisensi
 
-## Deploy on Vercel
+MIT
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🙋‍♂️ Kontribusi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Fork, modifikasi, lalu pull request!  
